@@ -1,1 +1,53 @@
-index.html
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Reference: https://cdnjs.com/libraries/reveal.js/5.0.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css"
+        integrity="sha512-6OOowvyM6Wl3NXfUTUn/mriLicQy5IoKsrlagy6/YJgd/hYpz4LxVlsV/DBghjcbWwKV4jyheUInWZUjagYVKw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/black.min.css"
+        integrity="sha512-B1sAcZ4KSpvbIUUvxaoqy56z88d6fozQyEV54K0gVBUMDMcVu9CAXMwJ5wTWo650j3IQH6yDEETiek6lrk/zCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>demo-video-clips-in-slides</title>
+</head>
+
+<body>
+    <!-- Reference: https://revealjs.com/markup/ -->
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <video src="./assets/001.mp4"></video>
+            </section>
+            <section>
+                <video src="./assets/002.mp4"></video>
+            </section>
+            <section>
+                <video src="./assets/003.mp4"></video>
+            </section>
+            <section>
+                <video src="./assets/004.mp4"></video>
+            </section>
+            <section>
+                <video src="./assets/005.mp4"></video>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.js"
+        integrity="sha512-QHSv1pr0bBhvVetfEITKxd5J44EA5PThotU8T1zz5ZMM8jDH8QVVH7tOIJ4btdpxoHPDBLGxWNyxz/IpmUGfjA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // Reference: https://revealjs.com/media/
+        const deck = new Reveal({
+            autoPlayMedia: true,
+        });
+        deck.initialize();
+    </script>
+</body>
+
+</html>
